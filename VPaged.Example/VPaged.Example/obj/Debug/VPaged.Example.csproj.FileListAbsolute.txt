@@ -1,0 +1,14 @@
+E:\my-project\VPageWinBase\Example\VPaged.WF.Example\VPaged.Example\VPaged.Example\bin\Debug\VPaged.Example.exe.config
+E:\my-project\VPageWinBase\Example\VPaged.WF.Example\VPaged.Example\VPaged.Example\bin\Debug\VPaged.Example.exe
+E:\my-project\VPageWinBase\Example\VPaged.WF.Example\VPaged.Example\VPaged.Example\bin\Debug\VPaged.Example.pdb
+E:\my-project\VPageWinBase\Example\VPaged.WF.Example\VPaged.Example\VPaged.Example\bin\Debug\System.Windows.Forms.dll
+E:\my-project\VPageWinBase\Example\VPaged.WF.Example\VPaged.Example\VPaged.Example\bin\Debug\VPaged.WF.dll
+E:\my-project\VPageWinBase\Example\VPaged.WF.Example\VPaged.Example\VPaged.Example\obj\Debug\VPaged.Example.csproj.AssemblyReference.cache
+E:\my-project\VPageWinBase\Example\VPaged.WF.Example\VPaged.Example\VPaged.Example\obj\Debug\VPaged.Example.csproj.SuggestedBindingRedirects.cache
+E:\my-project\VPageWinBase\Example\VPaged.WF.Example\VPaged.Example\VPaged.Example\obj\Debug\VPaged.Example.Form1.resources
+E:\my-project\VPageWinBase\Example\VPaged.WF.Example\VPaged.Example\VPaged.Example\obj\Debug\VPaged.Example.Properties.Resources.resources
+E:\my-project\VPageWinBase\Example\VPaged.WF.Example\VPaged.Example\VPaged.Example\obj\Debug\VPaged.Example.csproj.GenerateResource.cache
+E:\my-project\VPageWinBase\Example\VPaged.WF.Example\VPaged.Example\VPaged.Example\obj\Debug\VPaged.Example.csproj.CoreCompileInputs.cache
+E:\my-project\VPageWinBase\Example\VPaged.WF.Example\VPaged.Example\VPaged.Example\obj\Debug\VPaged.Example.csproj.CopyComplete
+E:\my-project\VPageWinBase\Example\VPaged.WF.Example\VPaged.Example\VPaged.Example\obj\Debug\VPaged.Example.exe
+E:\my-project\VPageWinBase\Example\VPaged.WF.Example\VPaged.Example\VPaged.Example\obj\Debug\VPaged.Example.pdb
