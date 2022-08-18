@@ -41,11 +41,7 @@ namespace VPaged.Example
             int count = employees.Count();
 
             //paging
-            _pag.Pagination(result, (x) => new
-            {
-                ID = x.ID,
-                Name = x.Name
-            }, (long)count, _pag.PageSize, ref GridMaster);
+            _pag.Pagination(result, (long)count, ref GridMaster);
         }
 
         private void BtnAdd_Click(object sender, EventArgs e)
