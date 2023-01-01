@@ -4,7 +4,7 @@ Source : https://github.com/tranthanhvan/VPaged.WF
 
 # Install
 
-CLI : ```csharp dotnet add package VPaged.WF --version 2.0.0 ``` 
+CLI : ```dotnet add package VPaged.WF --version 2.0.0``` 
 
 # How to Use
 
