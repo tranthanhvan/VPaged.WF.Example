@@ -45,11 +45,11 @@ CLI : ```dotnet add package VPaged.WF --version 2.0.0```
     }
 ```
 
-#### VPagRunOrRefresh() method used to run get data or can also refresh data after insert/update or delete . After Initialize a VPag , call VPagRunOrRefresh() Method to run. ex i will run VPag get Data and paging when From load events :
+#### VPagRunOrRefresh() method used to run get data or can also refresh data after insert/update or delete . After Initialize a VPag , call VPagRunOrRefresh() Method to run. ex i will run VPag get Data and paging when Form load events :
 ```csharp
     private void FrmEmployee_Load(object sender, EventArgs e)
     {
-		_pag.VPagRunOrRefresh();
+	_pag.VPagRunOrRefresh();
     }
 ```
 #### Or create a button with click event is run VPaged :
