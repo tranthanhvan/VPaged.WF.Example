@@ -47,7 +47,7 @@ Source : https://github.com/tranthanhvan/VPaged.WF
 ```csharp
     private void FrmEmployee_Load(object sender, EventArgs e)
     {
-		_pag.VPagRunOrRefresh();
+	_pag.VPagRunOrRefresh();
     }
 ```
 #### Or create a button with click event is run VPaged :
