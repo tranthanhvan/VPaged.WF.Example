@@ -2,6 +2,9 @@
 This library will help you to paginate desktop application easily with C#.
 Source : https://github.com/tranthanhvan/VPaged.WF
 
+https://github.com/tranthanhvan/VPaged.WF.Example/blob/main/WF.png
+https://github.com/tranthanhvan/VPaged.WF.Example/blob/main/WPF.png
+
 # Install
 
 ```dotnet add package VPaged.WF --version 2.0.1``` 
