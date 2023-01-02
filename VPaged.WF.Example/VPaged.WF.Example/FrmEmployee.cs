@@ -24,6 +24,8 @@ namespace VPaged.WF.Example
             _pag.SelectDataMaster = SelectData;
             //Set method get count need paging
             _pag.SelectCountMaster = GetCount;
+
+            this.numOnePage.Value = _pag.PageSize;
         }
 
         /// <summary>
@@ -41,6 +43,7 @@ namespace VPaged.WF.Example
 
         private void BtnLoad_Click(object sender, System.EventArgs e)
         {
+            _pag.PageSize = (int)this.numOnePage.Value;
             _pag.VPagRunOrRefresh();
         }
 
