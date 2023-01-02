@@ -4,7 +4,7 @@ Source : https://github.com/tranthanhvan/VPaged.WF
 
 # Install
 
-CLI : ```dotnet add package VPaged.WF --version 2.0.0``` 
+```dotnet add package VPaged.WF --version 2.0.0``` 
 
 # How to Use
 
@@ -28,14 +28,12 @@ CLI : ```dotnet add package VPaged.WF --version 2.0.0```
             _pag.SelectCountMaster = GetCount;
         }
 
-        /// <summary>
+         /// <summary>
         /// Method VPaged SelectDataMaster
         /// </summary>
         private void SelectData()
-        {
-            List<Employee> datas = _context.Employees.OrderBy(p => p.ID).Skip((_pag.PageIndex - 1) * _pag.PageSize).Take(_pag.PageSize).ToList();
-            _pag.Pagination(datas, ref GridMaster); // GridMaster is DataGridView.
-        }
+        => GridMaster.DataSource = _context.Employees.OrderBy(p => p.ID).Skip((_pag.PageIndex - 1) * _pag.PageSize)
+                                    .Take(_pag.PageSize).ToList(); //GridMaster is DataGridView
 
         /// <summary>
         /// Method VPaged SelectCountMaster
@@ -49,7 +47,7 @@ CLI : ```dotnet add package VPaged.WF --version 2.0.0```
 ```csharp
     private void FrmEmployee_Load(object sender, EventArgs e)
     {
-	_pag.VPagRunOrRefresh();
+		_pag.VPagRunOrRefresh();
     }
 ```
 #### Or create a button with click event is run VPaged :

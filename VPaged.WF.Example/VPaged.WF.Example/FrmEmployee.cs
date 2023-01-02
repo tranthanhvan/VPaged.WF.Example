@@ -30,10 +30,8 @@ namespace VPaged.WF.Example
         /// Method VPaged SelectDataMaster
         /// </summary>
         private void SelectData()
-        {
-            List<Employee> datas = _context.Employees.OrderBy(p => p.ID).Skip((_pag.PageIndex - 1) * _pag.PageSize).Take(_pag.PageSize).ToList();
-            _pag.Pagination(datas, ref GridMaster); // GridMaster is DataGridView.
-        }
+        => GridMaster.DataSource = _context.Employees.OrderBy(p => p.ID).Skip((_pag.PageIndex - 1) * _pag.PageSize)
+                                    .Take(_pag.PageSize).ToList();
 
         /// <summary>
         /// Method VPaged SelectCountMaster
