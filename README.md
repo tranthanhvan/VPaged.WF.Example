@@ -4,9 +4,11 @@ Source : https://github.com/tranthanhvan/VPaged.WF
 
 # Install
 
-```dotnet add package VPaged.WF --version 2.0.0``` 
+```dotnet add package VPaged.WF --version 2.0.1``` 
 
 # How to Use
+
+### With Winform application
 
 #### Initialize a VPag with the current Form ,set method you use to get data & totalCount in SelectDataMaster & SelectCountMaster properties:
 ```csharp
@@ -58,3 +60,52 @@ Source : https://github.com/tranthanhvan/VPaged.WF
     }
 ```
 
+### With WPF application
+
+#### it's still the same. just create System.WindowForms.Control to initialize VPaged . eg :
+```XAML
+    <WindowsFormsHost Margin="257,237,276,354" Width="500" Height="50" Name="HostNamePagingWF">
+        <wf:Control x:Name="ContainerPaging" Text="Here" Height="48" Width="370"/>
+    </WindowsFormsHost>
+```
+
+#### The rest is similar to the window form application:
+
+```csharp
+    public partial class MainWindow : Window
+    {
+        private readonly VPagedContext _context;
+
+        private VPagination _pag;
+
+        public MainWindow()
+        {
+            InitializeComponent();
+            _context = new VPagedContext();
+            //Initilizer VPaged.WF. `this.groupPaging` is System.Windows.Forms.GroupBox type Winform Base
+            _pag = new VPagination(ContainerPaging, pageSize: 3); //ContainerPaging is child WindowsFormsHost
+            //Set method Select Data
+            _pag.SelectDataMaster = SelectData;
+            //Set method get count need paging
+            _pag.SelectCountMaster = GetCount;
+        }
+
+        /// <summary>
+        /// Method VPaged SelectDataMaster
+        /// </summary>
+        private void SelectData()
+        => GridView.ItemsSource = _context.Employees.OrderBy(p => p.ID).Skip((_pag.PageIndex - 1) * _pag.PageSize)
+                                    .Take(_pag.PageSize).ToList();
+
+        /// <summary>
+        /// Method VPaged SelectCountMaster
+        /// </summary>
+        /// <returns>total count need paging</returns>
+        private long GetCount() => _context.Employees.Count();
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            _pag.VPagRunOrRefresh();
+        }
+    }
+```
