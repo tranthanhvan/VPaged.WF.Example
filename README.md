@@ -1,5 +1,5 @@
 # VPaged.WF Pagination component for winform base
-This library will help you to paginate with winform easily.
+This library will help you to paginate desktop application easily with C#.
 Source : https://github.com/tranthanhvan/VPaged.WF
 
 # Install
