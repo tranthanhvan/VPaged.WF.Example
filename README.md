@@ -2,8 +2,7 @@
 This library will help you to paginate desktop application easily with C#.
 Source : https://github.com/tranthanhvan/VPaged.WF
 
-https://github.com/tranthanhvan/VPaged.WF.Example/blob/main/WF.png
-https://github.com/tranthanhvan/VPaged.WF.Example/blob/main/WPF.png
+![alt text](https://github.com/tranthanhvan/VPaged.WF.Example/blob/main/WF.png)
 
 # Install
 
@@ -64,6 +63,8 @@ https://github.com/tranthanhvan/VPaged.WF.Example/blob/main/WPF.png
 ```
 
 ### With WPF application
+
+![alt text](https://github.com/tranthanhvan/VPaged.WF.Example/blob/main/WPF.png)
 
 #### it's still the same. just create System.WindowForms.Control to initialize VPaged . eg :
 ```XAML
